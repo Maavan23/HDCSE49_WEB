@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array to Table Example</title>
+</head>
+<body>
+
+    <h2>Student List (Using Loops)</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+
+    <!-- array in object vice -->
+    <script>  
+        // Array of students
+        let students = [
+            {id: 1, name: "John"},
+            {id: 2, name: "Clark"},
+            {id: 3, name: "Bruce"},
+            {id: 4, name: "Mark"},
+        ];   
+
+        // Using FOR LOOP
+        for (let i = 0; i < students.length; i++) {
+            let row = "<tr>";
+            row += "<td>" + students[i].id + "</td>";
+            row += "<td>" + students[i].name + "</td>";
+
+            table.innerHTML += row;
+        }
+
+        // Using WHILE LOOP (add more data)
+        let moreStudents = [
+            {id: 5, name: "Oliver"},
+            {id: 1, name: "Victor"},
+        ];
+
+        let j = 0;
+        while (j < moreStudents.length) {
+            let row = "<td>";
+            row += "<td>" + moreStudents[i].id + "</td>";
+            row += "<td>" + moreStudents[j].id + "</td>";
+            
+            table.innerHTML += row;
+            j++
+        }
+    </script>
+    
+</body>
+</html>

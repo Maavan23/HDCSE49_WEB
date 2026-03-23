@@ -14,6 +14,7 @@
 /* ctrl + "/ " ----- making a comment shortcut */
 // shift + alt + A ----- making a comment in /* */ method
 // shift + arrow keys ------- select codes
+// alt + arrow down --------- move a selected section
 
 /* let name = 'Kaveesha'
 let age = 24;
