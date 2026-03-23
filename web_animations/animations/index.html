@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--  Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+
+        header {
+            background-color: darkblue;
+            color: white;
+            padding: 20px;
+        }
+
+        .card {
+            width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray !important;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover{
+            transform: scale(1.04); /*slite zoom*/
+            box-shadow: 0 10px 20px rgb(0,0, 0, 0.2);
+            background-color: #f0f8ff;
+        }
+
+        button{
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Mobile Responsive*/
+        @media (max-width: 600px){
+            .card{
+                width: 90%;
+            }
+        }
+    </style>
+
+    <!-- External css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Contains visible webpage content. -->
+<body>     
+    <header>
+        <h1>Student Profile App</h1>
+    </header>
+
+    <!-- Inline Css example -->
+    <h2 style="color: green;"></h2>
+
+    <div class="card">
+        <h3>Student Details</h3>
+        <p>Name: Sasindu</p>
+        <p>Course: Diploma in ICT</p>
+
+        <button style="background-color: orange;">Click Me</button>
+
+    </div>
+
+    <h3>Css Shapes</h3>
+
+    <!-- type div.name and hit enter to simply create class -->
+    <div class="Shapes">
+        <div class="circle"></div>
+        <div class="square"></div>
+        <div class="triangle"></div>
+
+    </div>
+
+</body>
+
+</html>

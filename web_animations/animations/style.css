@@ -1,0 +1,62 @@
+/*External CSS*/
+
+.Shapes{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    animation: bounce 2s infinite;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation: rotate 3s infinite linear;
+}
+
+
+/*Triagle*/
+.triangle{
+    margin: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid green;
+    animation: move 2s infinite alternate;
+}
+
+/*animations*/
+@keyframes bounce{
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-30px);}
+    100% {transform: translateY(0);}
+}
+
+@keyframes rotate{
+    form{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+@keyframes move{
+    from{transform: translateX(0);}
+    to{transform: translateX(60px);}
+}
+         
+/* Rolling Animation */
+@keyframes roll{
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    100% {
+        transform: translateX(400px) rotate(360deg);
+    }
+}
