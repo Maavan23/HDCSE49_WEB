@@ -1,0 +1,90 @@
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgb(247, 255, 221) !important;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh; /* full screen */
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+/* Background Video */
+.big-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover; /* fills screen properly */
+    z-index: -2;
+}
+
+/* Dark Overlay */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5); /* dark overlay */
+    z-index: -1;
+}
+
+/* Content above video */
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Headings */
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero h5 {
+    font-weight: 400;
+}
+
+/* Buttons */
+.btn-custom {
+    border-radius: 25px;
+    padding: 10px 30px;
+}
+
+/* Optional text color class */
+.txt-color {
+    color: aliceblue;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
